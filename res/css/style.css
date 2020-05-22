@@ -1,0 +1,135 @@
+* {
+	box-sizing: border-box;
+	text-decoration: none !important;
+	outline: none !important;
+}
+
+body {
+	margin: 0;
+	padding: 100px 0 0;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	line-height: 1.5em !important;
+	color: #424242;
+}
+
+a {
+	transition: .25s;
+}
+
+.discord {
+	margin-bottom: 50px;
+	padding: 30px;
+	background: #7289da;
+	color: #fff;
+	text-align: center;
+}
+
+.discord img {
+	width: 30%;
+	max-width: 120px;
+}
+
+.discord h3 {
+	font-size: 1.35em;
+	line-height: 1.5em;
+	color: rgba(255, 255, 255, .85);
+}
+
+.discord a {
+	display: inline-block;
+	margin: 15px 0;
+	padding: 10px 30px;
+	font-size: .8em;
+	color: rgba(255, 255, 255, .65);
+	border: 1px solid rgba(255, 255, 255, .65);
+	border-radius: 5px;
+}
+
+.discord a:hover {
+color: rgba(255, 255, 255, .85);
+border: 1px solid rgba(255, 255, 255, .85);
+}
+
+.section-title {
+	padding-bottom: 5px;
+	font-size: 1.2em;
+	border-bottom: 1px solid #ddd;
+}
+
+.medium-widget-article__row {
+	margin-top: 30px;
+}
+
+.medium-widget-article__title {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+	overflow: hidden;
+	margin: 0 0 5px;
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+.medium-widget-article__grid {
+	display: flex;
+	width: 100%;
+}
+
+.medium-widget-article__image img {
+	width: 100px;
+	margin-right: 15px;
+}
+
+.medium-widget-article__description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+	overflow: hidden;
+	height: 3em;
+}
+
+.medium-widget-article__date {
+	margin-top: 10px;
+	color: #888;
+	font-size: 12px;
+	line-height: 1em;
+}
+
+.medium-widget-article__date:before {
+	content: "\f133";
+	margin-right: 5px;
+	font-family: "Font Awesome 5 Free";
+	font-weight: bold;
+}
+
+.medium-widget-article__error {
+	color: #fd7272;
+	font-weight: bold;
+	text-align: center;
+}
+
+.medium-widget-article__empty {
+	color: #03a87c;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+/* tablet screen view */
+
+@media (min-width: 768px) {
+
+}
+
+/* desktop screen view */
+
+@media (min-width: 992px) {
+
+}
+
+/* large desktop screen view */
+
+@media (min-width: 1200px) {
+
+}
