@@ -1,20 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="{{ site.url }}/res/img/favicon.png">
-  <title>{{ page.title }} | {{ site.name }}</title>
-
-  {% include style.html %}
-  {% include analytics.html %}
-</head>
-
-<body>
-  <section class="container">
+---
+layout: default
+---
+<section class="container">
+  <section class="col-md-8">
     <h1>{{ page.title }}</h1>
     <p class="meta">{{ page.date | date_to_string }}</p>
     {{ content }}
   </section>
-</body>
-</html>
+    <aside class="col-md-4">
+      <div class="discord">
+        <img src="res/img/discord.png" alt="Discord">
+        <h3>Ingin belajar riset? Yuk gabung di Discord Server kami!</h3>
+        <a href="https://link.mf-chan.com/belajar-riset" target="_blank">
+          Akses Sekarang, Gratis!
+        </a>
+      </div>
+    </aside>
+</section>
