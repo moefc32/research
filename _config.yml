@@ -1,3 +1,4 @@
 name: Mfc Website
 markdown: kramdown
 permalink: /bit/:year/:month/:day/:title
+url: https://research.mf-chan.com
