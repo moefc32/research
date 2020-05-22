@@ -3,7 +3,7 @@ layout: feed
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title>Research Bit | Mfc Website</title>
+	<title>Research Bit of Mfc Website</title>
 	<link href="https://research.mf-chan.com/bit/atom.xml" rel="self"/>
 	<link href="https://hankquinlan.github.io/bit"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
