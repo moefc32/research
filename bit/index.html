@@ -3,14 +3,14 @@ layout: default
 title: Research Bit
 ---
 <section class="container">
-	<aside class="col-md-4 col-md-push-8">
-		{% include sidebar.html %}
-	</aside>
-	<section class="col-md-8 col-md-pull-4">
+	<section class="col-md-8">
 		<ul class="posts">
 			{% for post in site.posts %}
 			<li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 			{% endfor %}
 		</ul>
 	</section>
+	<aside class="col-md-4">
+		{% include sidebar.html %}
+	</aside>
 </section>
