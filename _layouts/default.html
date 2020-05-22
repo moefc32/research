@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="res/img/favicon.png">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="res/css/style.css" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131278165-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-131278165-1');
+  </script>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="./">Home</a></li>
+      <li><a href="about">About</a></li>
+    </ul>
+  </nav>
+  <section class="container">
+    {{ content }}
+  </section>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="res/js/medium.js"></script>
+  <script src="res/js/script.js"></script>
+</body>
+</html>
