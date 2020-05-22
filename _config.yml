@@ -1,6 +1,6 @@
 name: Mfc Website
 markdown: kramdown
-permalink: /bit/:year/:month/:day/:title
 url: https://research.mf-chan.com
 paginate: 10
-paginate_path: "/bit/page:num/"
+permalink: /bit/:year/:month/:day/:title
+paginate_path: /bit/page:num/
