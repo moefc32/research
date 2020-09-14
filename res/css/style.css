@@ -66,9 +66,10 @@ border: 1px solid rgba(255, 255, 255, .85);
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 	overflow: hidden;
-	margin: 0 0 5px;
+	margin: 0 0 2px;
 	font-weight: bold;
 	font-size: 1.25em;
+	line-height: 1.25em;
 }
 
 .medium-widget-article__grid {
@@ -90,7 +91,7 @@ border: 1px solid rgba(255, 255, 255, .85);
 }
 
 .medium-widget-article__date {
-	margin-top: 10px;
+	margin-top: 8px;
 	color: #888;
 	font-size: 12px;
 	line-height: 1em;
@@ -115,6 +116,10 @@ border: 1px solid rgba(255, 255, 255, .85);
 	text-align: center;
 }
 
+.medium-site {
+	padding: 30px 0;
+	text-align: center;
+}
 
 /* tablet screen view */
 

@@ -1,6 +1,0 @@
-name: Mfc Website
-markdown: kramdown
-url: https://research.mf-chan.com
-paginate: 10
-permalink: /bit/:year/:month/:day/:title
-paginate_path: /bit/page:num/
