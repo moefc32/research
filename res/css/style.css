@@ -45,8 +45,37 @@ header h1 {
 
 .carousel {
 	margin: 0 0 50px;
-	padding: 15px 0;
-	background: #333;
+	padding: 30px 0;
+	background: url("../img/texture.png") fixed, #333;
+	background-size: cover;
+}
+
+.carousel .youtube-wrapper {
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%;
+	overflow: hidden;
+}
+
+.carousel .youtube-wrapper:not(:first-child) {
+	margin-top: 15px;
+}
+
+.carousel .youtube-wrapper img {
+	position: absolute;
+	z-index: 100;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+.carousel .youtube-wrapper h2 {
+	position: absolute;
+	z-index: 120;
+	bottom: 15px;
+	left: 15px;
+	margin: 0;
 }
 
 .discord {
