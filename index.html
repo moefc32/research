@@ -56,8 +56,19 @@
     </div>
   </section>
 
-  <footer>
-
+  <footer class="container">
+    <div class="row credits">
+      <div class="col-xs-12">
+        <strong>Mfc</strong> &copy;
+        <script>
+          if (new Date().getFullYear() > 2018) {
+            document.write('2018 - ' + new Date().getFullYear());
+          } else {
+            document.write(new Date().getFullYear());
+          }
+        </script>
+      </div>
+    </div>
   </footer>
 
   <script src="https://kit.fontawesome.com/95849a279d.js" crossorigin="anonymous"></script>
