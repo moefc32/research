@@ -24,7 +24,7 @@ function scrollIndicator() {
 var channelID = "UCoxdB0_IJoOlYcLfiFkSbLg";
 var reqURL = "https://www.youtube.com/feeds/videos.xml?channel_id=";
 $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(reqURL) + channelID, function (data) {
-  for (let n = 0; n <= 3; n += 1) {
+  for (let n = 0; n <= 4; n += 1) {
     var x = n + 1;
     var link = data.items[n].link;
     var title = data.items[n].title;

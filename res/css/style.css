@@ -21,7 +21,7 @@ a {
 	font-size: 16px !important;
 }
 
-header h1 {
+header span {
 	margin: 0;
 	font-size: 2em;
 	line-height: 3em;
@@ -50,18 +50,36 @@ header h1 {
 	background-size: cover;
 }
 
-.carousel .youtube-wrapper {
+.carousel .primary .youtube-wrapper {
+	margin-bottom: 30px;
+}
+
+.carousel .secondary .youtube-wrapper {
+	overflow: hidden
+}
+
+.carousel .secondary .youtube-wrapper:not(:first-child) {
+	margin-top: 15px;
+}
+
+.carousel .primary .youtube-image-wrapper {
 	position: relative;
 	width: 100%;
 	padding-top: 56.25%;
 	overflow: hidden;
 }
 
-.carousel .youtube-wrapper:not(:first-child) {
-	margin-top: 15px;
+.carousel .secondary .youtube-image-wrapper {
+	position: relative;
+	float: left;
+	clear: left;
+	width: 50%;
+	padding-top: 28.125%;
+	overflow: hidden;
 }
 
-.carousel .youtube-wrapper img {
+.carousel .primary .youtube-wrapper img,
+.carousel .secondary .youtube-wrapper img {
 	position: absolute;
 	z-index: 100;
 	top: 50%;
@@ -70,12 +88,31 @@ header h1 {
 	width: 100%;
 }
 
-.carousel .youtube-wrapper h1 {
+.carousel .primary h1 {
 	position: absolute;
-	z-index: 120;
-	bottom: 15px;
-	left: 15px;
-	margin: 0;
+	z-index: 1000;
+	width: calc(100% - 90px);
+	margin: -30px 30px 0;
+	padding: 18px;
+	background: #fff;
+	font-size: 1.25em;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.carousel .secondary h2 {
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	float: left;
+	width: 45%;
+	margin: 0 0 0 5%;
+	font-size: 1em;
+	line-height: 1.25em;
+	color: #fff;
 }
 
 .discord {
@@ -183,28 +220,41 @@ header h1 {
 	text-align: center;
 }
 
-.credits {
+footer {
 	clear: both;
 	margin: 50px 0 0;
 	padding: 30px 0;
 	text-align: center;
-	color: #aaa;
+	color: #888;
 	border-top: solid 1px #ddd;
 }
 
-.credits a {
-	color: #aaa;
-	opacity: 1;
+footer .copyright,
+footer .license {
+	text-align: center;
 }
 
-.credits a:hover,
-.credits a:focus {
+footer a {
 	color: #888;
+	font-weight: bold;
+}
+
+footer a:hover,
+footer a:focus {
+	color: #666;
 }
 
 /* tablet screen view */
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+	footer .copyright {
+		text-align: left;
+	}
+
+	footer .license {
+		text-align: right;
+	}
+}
 
 /* desktop screen view */
 
