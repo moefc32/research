@@ -31,7 +31,7 @@ $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(r
     var id = link.substr(link.indexOf("=") + 1);
     $(".youtube-link" + x).attr("title", title);
     $(".youtube-link" + x).attr("href", "https://www.youtube.com/watch?v=" + id);
-    $(".youtube-thumbnail" + x).attr("src", "http://img.youtube.com/vi/" + id + "/maxresdefault.jpg");
+    $(".youtube-thumbnail" + x).attr("src", "https://img.youtube.com/vi/" + id + "/maxresdefault.jpg");
     $(".youtube-title" + x).text(title);
   }
 });
