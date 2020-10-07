@@ -24,7 +24,11 @@ a {
 header span {
 	margin: 0;
 	font-size: 1.75em;
-	line-height: 3.5em;
+	line-height: 100px;
+}
+
+header .search-box {
+	display: none;
 }
 
 .scroll-indicator {
@@ -113,6 +117,10 @@ header span {
 	font-size: 1em;
 	line-height: 1.25em;
 	color: #fff;
+}
+
+aside .search-box {
+	margin-bottom: 15px;
 }
 
 .discord {
@@ -294,9 +302,33 @@ footer a:focus {
 	color: #666;
 }
 
+input.gsc-input,
+.gsc-input-box,
+.gsc-input-box-hover,
+.gsc-input-box-focus,
+.gsc-search-button {
+	box-sizing: content-box;
+	line-height: normal;
+}
+
+.gsc-control-cse {
+	padding: 0 !important;
+}
+
 /* tablet screen view */
 
 @media (min-width: 768px) {
+	header .search-box {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		height: 100px;
+	}
+
+	header .search-box>div {
+		width: 100%;
+	}
+
 	.research-showcase a {
 		line-height: 2em;
 	}
