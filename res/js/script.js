@@ -32,6 +32,7 @@ $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(r
     $(".youtube-link" + x).attr("title", title);
     $(".youtube-link" + x).attr("href", "https://www.youtube.com/watch?v=" + id);
     $(".youtube-thumbnail" + x).attr("src", "https://img.youtube.com/vi/" + id + "/maxresdefault.jpg");
+    $(".youtube-thumbnail" + x + "-small").attr("src", "https://img.youtube.com/vi/" + id + "/mqdefault.jpg");
     $(".youtube-title" + x).text(title);
   }
 });
