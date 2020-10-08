@@ -256,6 +256,10 @@ aside .discord a:hover {
   background: #9dc928;
 }
 
+.research-showcase a.scopus:hover {
+  background: #ff8200;
+}
+
 .research-showcase a.figshare:hover {
   background: #c63753;
 }
