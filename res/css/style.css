@@ -252,16 +252,12 @@ aside .discord a:hover {
   background: #4285f4;
 }
 
-.research-showcase a.publons:hover {
-  background: #336699;
+.research-showcase a.orcid:hover {
+  background: #9dc928;
 }
 
 .research-showcase a.figshare:hover {
   background: #c63753;
-}
-
-.research-showcase a.orcid:hover {
-  background: #9dc928;
 }
 
 .research-showcase a.researchgate:hover {
