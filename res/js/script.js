@@ -1,3 +1,10 @@
+window.onscroll = () => {
+  let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  let scrolled = (winScroll / height) * 100;
+  document.getElementById("bar").style.width = scrolled + "%";
+};
+
 MediumWidget.Init({
   renderTo: '#medium-feed',
   params: {
@@ -8,18 +15,7 @@ MediumWidget.Init({
       "publishAt"
     ]
   }
-})
-
-window.onscroll = function () {
-  scrollIndicator()
-};
-
-function scrollIndicator() {
-  let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  let scrolled = (winScroll / height) * 100;
-  document.getElementById("bar").style.width = scrolled + "%";
-}
+});
 
 const channelID = "UCoxdB0_IJoOlYcLfiFkSbLg";
 const reqURL = "https://www.youtube.com/feeds/videos.xml?channel_id=";
