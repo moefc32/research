@@ -275,10 +275,6 @@ aside .discord a:hover {
   background: #00ccbb;
 }
 
-.research-showcase a.mendeley:hover {
-  background: #e7212f;
-}
-
 .research-showcase a:hover img {
   filter: brightness(0) invert(1);
 }
