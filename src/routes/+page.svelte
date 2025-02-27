@@ -1,6 +1,7 @@
 <script>
     import { onMount } from 'svelte';
     import { toast } from 'svoast';
+    import AOS from 'aos';
     import datePrettier from '$lib/datePrettier';
 
     // const globalSearchModalEl = document.querySelector("#global-search");
