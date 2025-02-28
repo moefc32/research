@@ -59,6 +59,8 @@
     // },
 
     onMount(async () => {
+        AOS.init();
+
         try {
             const response = await fetch(import.meta.env.VITE_BACKEND);
             const { data } = await response.json();
@@ -85,10 +87,12 @@
 
 <Banner />
 
-<main class="flex flex-1 flex-col gap-6 mx-12 my-6">
-    <h1>Welcome to SvelteKit</h1>
-    <p>
-        Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read
-        the documentation
-    </p>
+<main class="flex flex-1 flex-col gap-9 mx-12 my-6">
+    <div class="flex flex-col gap-6 w-full">
+        <h1>Welcome to SvelteKit</h1>
+        <p>
+            Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to
+            read the documentation
+        </p>
+    </div>
 </main>
