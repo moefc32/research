@@ -4,6 +4,8 @@
     import AOS from 'aos';
     import datePrettier from '$lib/datePrettier';
 
+    import Banner from '$lib/component/Banner.svelte';
+
     // const globalSearchModalEl = document.querySelector("#global-search");
     // const globalSearchModal =
     //   globalSearchModalEl && new bootstrap.Modal(globalSearchModalEl, {});
@@ -75,13 +77,15 @@
         } catch (e) {
             console.error(e);
             toast.error(
-                'Cannot fetch data from the backend, please try again later.',
+                'Cannot fetch data from the backend, please try again later!',
             );
         }
     });
 </script>
 
-<main class="flex-1 mx-12 my-6">
+<Banner />
+
+<main class="flex flex-1 flex-col gap-6 mx-12 my-6">
     <h1>Welcome to SvelteKit</h1>
     <p>
         Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read
