@@ -97,10 +97,10 @@
         <Publication {publication} />
     </div>
     <Platform {platform} />
-    <div class="flex flex-col lg:flex-row items-start gap-12 w-full">
+    <div class="flex flex-col-reverse lg:flex-row items-start gap-12 w-full">
         <Medium {medium} />
-        <div
-            class="flex flex-col items-center gap-6 p-6 bg-[#7289da] text-white w-full lg:w-1/3 rounded-lg shadow-lg"
+        <aside
+            class="flex flex-col items-center gap-6 p-6 bg-[#7289da] text-white w-full lg:w-1/3 rounded-lg shadow-lg lg:sticky lg:top-[110px]"
         >
             <div
                 class="pt-[100px] bg-[url(/discord.webp)] bg-[center_top] bg-no-repeat bg-[length:100px] text-xl text-center max-w-[400px]"
@@ -114,6 +114,6 @@
             >
                 Access Now, Free!
             </a>
-        </div>
+        </aside>
     </div>
 </main>
