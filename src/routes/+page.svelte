@@ -5,6 +5,10 @@
     import datePrettier from '$lib/datePrettier';
 
     import Banner from '$lib/component/Banner.svelte';
+    import Education from '$lib/component/Education.svelte';
+    import Publication from '$lib/component/Publication.svelte';
+    import Platform from '$lib/component/Platform.svelte';
+    import Medium from '$lib/component/Medium.svelte';
 
     // const globalSearchModalEl = document.querySelector("#global-search");
     // const globalSearchModal =
@@ -13,7 +17,7 @@
     let dataLoading = true;
     let education = [];
     let publication = [];
-    let externalResearch = [];
+    let platform = [];
     let medium = {};
 
     // globalSearch: {
@@ -67,7 +71,7 @@
 
             education = data.education;
             publication = data.publication;
-            externalResearch = data.externalResearch;
+            platform = data.platform;
             const getMedium = data.medium;
 
             getMedium.posts.forEach(item => {
@@ -88,11 +92,28 @@
 <Banner />
 
 <main class="flex flex-1 flex-col gap-9 mx-12 my-6">
-    <div class="flex flex-col gap-6 w-full">
-        <h1>Welcome to SvelteKit</h1>
-        <p>
-            Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to
-            read the documentation
-        </p>
+    <div class="flex flex-col lg:flex-row gap-9 w-full">
+        <Education {education} />
+        <Publication {publication} />
+    </div>
+    <Platform {platform} />
+    <div class="flex flex-col lg:flex-row items-start gap-12 w-full">
+        <Medium {medium} />
+        <div
+            class="flex flex-col items-center gap-6 p-6 bg-[#7289da] text-white w-full lg:w-1/3 rounded-lg shadow-lg"
+        >
+            <div
+                class="pt-[100px] bg-[url(/discord.webp)] bg-[center_top] bg-no-repeat bg-[length:100px] text-xl text-center max-w-[400px]"
+            >
+                Want to be a great academic researcher? Join our Discord server!
+            </div>
+            <a
+                href="https://link.mf-chan.com/belajar-riset"
+                target="_blank"
+                class="btn btn-lg btn-outline hover:text-[#7289da]"
+            >
+                Access Now, Free!
+            </a>
+        </div>
     </div>
 </main>
