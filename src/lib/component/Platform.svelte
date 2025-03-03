@@ -17,7 +17,7 @@
                 <a
                     href={item.link}
                     target="_blank"
-                    class="block !bg-contain w-full aspect-9/1"
+                    class="block bg-contain! w-full aspect-9/1"
                     style="background: url(/platform/{item.class}.webp) center center no-repeat;"
                 ></a>
             </div>
