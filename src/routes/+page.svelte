@@ -10,7 +10,7 @@
     import Platform from '$lib/component/Platform.svelte';
     import Medium from '$lib/component/Medium.svelte';
 
-    // const globalSearchModalEl = document.querySelector("#global-search");
+    // const globalSearchModalEl = document.querySelector('#global-search');
     // const globalSearchModal =
     //   globalSearchModalEl && new bootstrap.Modal(globalSearchModalEl, {});
 
@@ -21,11 +21,11 @@
     let medium = {};
 
     // globalSearch: {
-    //   query: "",
-    //   queryModal: "",
+    //   query: '',
+    //   queryModal: '',
     //   toggle: false,
     //   loading: false,
-    //   backend: "https://api.mf-chan.com/search",
+    //   backend: 'https://api.mf-chan.com/search',
     //   searchTime: 0,
     //   searchResult: [],
     //   loadData: async function () {
@@ -51,7 +51,7 @@
     //     try {
     //       if (query) {
     //         queryModal = query;
-    //         query = "";
+    //         query = '';
 
     //         globalSearchModal.show();
     //         await loadData();
