@@ -25,7 +25,7 @@
     //   queryModal: '',
     //   toggle: false,
     //   loading: false,
-    //   backend: 'https://api.mf-chan.com/search',
+    //   backend: import.meta.env.VITE_SEARCH_URL,
     //   searchTime: 0,
     //   searchResult: [],
     //   loadData: async function () {
