@@ -93,13 +93,13 @@
 
 <main class="flex flex-1 flex-col gap-9 mx-12 my-6">
     <div class="flex flex-col lg:flex-row gap-9 w-full">
-        <Education {education} />
-        <Publication {publication} />
+        <Education {education} {dataLoading} />
+        <Publication {publication} {dataLoading} />
     </div>
-    <Platform {platform} />
+    <Platform {platform} {dataLoading} />
     <div class="flex flex-col-reverse lg:flex-row items-start gap-12 w-full">
-        <Medium {medium} />
-        <aside
+        <Medium {medium} {dataLoading} />
+        <!-- <aside
             class="flex flex-col items-center gap-6 p-6 bg-[#7289da] text-white w-full lg:w-1/3 rounded-lg shadow-lg lg:sticky lg:top-[110px]"
         >
             <div
@@ -114,6 +114,6 @@
             >
                 Access Now, Free!
             </a>
-        </aside>
+        </aside> -->
     </div>
 </main>
