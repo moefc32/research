@@ -75,7 +75,9 @@
             const getMedium = data.medium;
 
             getMedium.posts.forEach(item => {
-                item.date = datePrettier(item.date);
+                item.date = datePrettier(item.date, {
+                    date: true,
+                });
             });
 
             medium = getMedium;
