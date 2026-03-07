@@ -11,7 +11,7 @@
         {#if !dataLoading}
             {#each education as item, i}
                 <div
-                    class="card flex gap-4 p-4 w-full border-[1px] border-gray-300 shadow-lg"
+                    class="card flex gap-4 p-4 w-full border-1 border-gray-300 shadow-lg"
                     data-aos="fade-up"
                 >
                     <div class="flex flex-col gap-1">
@@ -32,7 +32,7 @@
         {:else}
             {#each Array(2) as _, i}
                 <div
-                    class="card bg-gray-200 w-full h-[126px] border-[1px] border-gray-300 shadow-lg animate-pulse"
+                    class="card bg-gray-200 w-full h-[126px] border-1 border-gray-300 shadow-lg animate-pulse"
                     data-aos="fade-up"
                 ></div>
             {/each}

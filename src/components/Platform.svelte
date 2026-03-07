@@ -12,7 +12,7 @@
         {#if !dataLoading}
             {#each platform as item, i}
                 <div
-                    class="card flex gap-4 p-4 w-full border-[1px] border-gray-300 shadow-lg"
+                    class="card flex gap-4 p-4 w-full border-1 border-gray-300 shadow-lg"
                     title={item.name}
                     data-aos="fade-up"
                 >
@@ -28,7 +28,7 @@
         {:else}
             {#each Array(5) as _, i}
                 <div
-                    class="card p-4 bg-gray-200 w-full border-[1px] border-gray-300 shadow-lg animate-pulse"
+                    class="card p-4 bg-gray-200 w-full border-1 border-gray-300 shadow-lg animate-pulse"
                     data-aos="fade-up"
                 >
                     <div class="card w-full aspect-9/1"></div>

@@ -12,7 +12,7 @@
             {#each medium.posts as item, i}
                 <div class="flex gap-3" data-aos="fade-up">
                     <div
-                        class="bg-cover! w-[250px] aspect-2/1 rounded-sm border-[1px] border-gray-300"
+                        class="bg-cover! w-[250px] aspect-2/1 rounded-sm border-1 border-gray-300"
                         style="background: url({item.image}) center center no-repeat;"
                     ></div>
                     <div class="flex flex-col gap-2 w-full">
@@ -33,7 +33,7 @@
             {#each Array(10) as _, i}
                 <div class="flex gap-3" data-aos="fade-up">
                     <div
-                        class="bg-gray-200 w-[250px] aspect-2/1 rounded-sm border-[1px] border-gray-300 animate-pulse"
+                        class="bg-gray-200 w-[250px] aspect-2/1 rounded-sm border-1 border-gray-300 animate-pulse"
                     ></div>
                     <div class="flex flex-col gap-2 w-full">
                         <div class="text-xl line-clamp-2 w-full">
