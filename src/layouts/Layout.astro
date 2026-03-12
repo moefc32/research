@@ -1,7 +1,8 @@
 ---
+// @ts-nocheck
 import '../styles/global.css';
 import 'aos/dist/aos.css';
-import { Toasts } from 'svoast';
+import { Toaster } from 'svelte-sonner';
 
 import { ClientRouter } from 'astro:transitions';
 
@@ -66,7 +67,15 @@ const openGraph = {
             <Header client:load />
             <slot />
             <Footer client:load />
-            <Toasts client:load position={'bottom-center'} />
+            <Toaster
+                client:load
+                richColors
+                theme="system"
+                position="bottom-center"
+                toastOptions={{
+                    style: 'font-size: 1rem;',
+                }}
+            />
         </div>
         <RegisterSW client:load />
     </body>

@@ -1,6 +1,6 @@
 <script>
     import { onMount } from 'svelte';
-    import { toast } from 'svoast';
+    import { toast } from 'svelte-sonner';
     import AOS from 'aos';
     import ky from 'ky';
     import datePrettier from '../lib/datePrettier';
@@ -40,9 +40,7 @@
             dataLoading = false;
         } catch (e) {
             console.error(e);
-            toast.error(
-                'Cannot fetch data from the backend, please try again later!',
-            );
+            toast.error('Cannot fetch data, please try again later!');
         }
     });
 </script>
