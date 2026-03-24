@@ -1,5 +1,5 @@
 <script>
-    import { CalendarDays } from 'lucide-svelte';
+    import { CalendarDays, SquareArrowOutUpRight } from 'lucide-svelte';
 
     export let medium;
     export let dataLoading;
@@ -48,12 +48,14 @@
             {/each}
         {/if}
     </div>
-    <a
-        href={medium.url}
-        target="_blank"
-        class="btn btn-primary self-center"
-        disabled={!!medium?.url}
-    >
-        Browse More...
-    </a>
+    {#if medium?.url}
+        <a
+            href={medium.url}
+            target="_blank"
+            class="btn btn-primary self-center"
+        >
+            <SquareArrowOutUpRight size={14} />
+            Browse more on Medium
+        </a>
+    {/if}
 </div>
