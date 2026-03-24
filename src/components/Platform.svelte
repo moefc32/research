@@ -8,7 +8,9 @@
     <h2 class="pb-2 text-lg border-b-[1px] border-gray-300">
         Research Portfolio Platforms
     </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+    <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 content-center gap-3"
+    >
         {#if !dataLoading}
             {#each platform as item, i}
                 <div
@@ -17,11 +19,10 @@
                     data-aos="fade-up"
                 >
                     <a
-                        href={item.link}
+                        href={item.url}
                         target="_blank"
-                        class="block bg-contain! w-full aspect-9/1"
+                        class="block bg-contain! w-full aspect-12/1 sm:aspect-14/1 md:aspect-10/1 lg:aspect-9/1"
                         style="background: url(/platform/{item.class}.webp) center center no-repeat;"
-                        aria-label={item.name}
                     ></a>
                 </div>
             {/each}

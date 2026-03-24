@@ -5,11 +5,12 @@
     import ky from 'ky';
     import datePrettier from '../lib/datePrettier';
 
-    import Banner from '../components/Banner.svelte';
-    import Education from '../components/Education.svelte';
-    import Publication from '../components/Publication.svelte';
-    import Platform from '../components/Platform.svelte';
-    import Medium from '../components/Medium.svelte';
+    import Banner from './Banner.svelte';
+    import DomainNode from './DomainNode.svelte';
+    import Education from './Education.svelte';
+    import Publication from './Publication.svelte';
+    import Platform from './Platform.svelte';
+    import Medium from './Medium.svelte';
 
     let dataLoading = true;
     let education = [];
@@ -72,6 +73,7 @@
             </a>
         </aside> -->
     </div>
+    <DomainNode base={'research'} nodes={['design', 'code']} />
 </main>
 
 <Toaster
