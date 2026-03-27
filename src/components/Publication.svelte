@@ -45,7 +45,7 @@
             {#each Array(5) as _, i}
                 <div class="flex">
                     <div
-                        class="bg-gray-200 w-full h-[80px] border-1 border-gray-300 shadow-lg animate-pulse"
+                        class="bg-gray-200 w-full h-[80px] border-1 border-gray-300 shadow-lg skeleton"
                     ></div>
                 </div>
             {/each}

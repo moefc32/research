@@ -32,7 +32,7 @@
         {:else}
             {#each Array(2) as _, i}
                 <div
-                    class="card bg-gray-200 w-full h-[126px] border-1 border-gray-300 shadow-lg animate-pulse"
+                    class="card bg-gray-200 w-full h-[126px] border-1 border-gray-300 shadow-lg skeleton"
                     data-aos="fade-up"
                 ></div>
             {/each}
