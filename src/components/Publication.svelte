@@ -6,14 +6,14 @@
 </script>
 
 <div class="flex flex-col gap-6 w-full lg:w-1/2">
-    <h2 class="pb-2 text-lg border-b-[1px] border-gray-300">
+    <h2 class="pb-2 text-lg border-b border-gray-300">
         Scientific Publications
     </h2>
-    <div class="flex flex-col gap-4 lg:max-h-[320px] overflow-y-auto">
+    <div class="flex flex-col gap-4 lg:max-h-80 overflow-y-auto">
         {#if !dataLoading}
             {#each publication as item, i}
                 <div class="flex">
-                    <div class="px-3 pt-[5px]">
+                    <div class="px-3 pt-1">
                         <File size={18} />
                     </div>
                     <div class="flex flex-col gap-2 w-full">
@@ -45,7 +45,7 @@
             {#each Array(5) as _, i}
                 <div class="flex">
                     <div
-                        class="bg-gray-200 w-full h-[80px] border-1 border-gray-300 shadow-lg skeleton"
+                        class="bg-gray-200 w-full h-20 border-1 border-gray-300 shadow-lg skeleton"
                     ></div>
                 </div>
             {/each}

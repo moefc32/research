@@ -5,7 +5,7 @@
 
 <!-- svelte-ignore a11y_consider_explicit_label -->
 <div class="flex flex-col gap-6 w-full">
-    <h2 class="pb-2 text-lg border-b-[1px] border-gray-300">
+    <h2 class="pb-2 text-lg border-b border-gray-300">
         Research Portfolio Platforms
     </h2>
     <div
