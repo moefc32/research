@@ -23,7 +23,9 @@
 
         try {
             const { data } = await ky
-                .get(import.meta.env.PUBLIC_BACKEND)
+                .get(import.meta.env.PUBLIC_BACKEND, {
+                    timeout: 30 * 1000,
+                })
                 .json();
 
             education = data.education;
