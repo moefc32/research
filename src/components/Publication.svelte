@@ -1,5 +1,5 @@
 <script>
-    import { File } from 'lucide-svelte';
+    import { File } from '@lucide/svelte';
 
     export let publication;
     export let dataLoading;

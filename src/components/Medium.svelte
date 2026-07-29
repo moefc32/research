@@ -1,5 +1,5 @@
 <script>
-    import { CalendarDays, SquareArrowOutUpRight } from 'lucide-svelte';
+    import { CalendarDays, SquareArrowOutUpRight } from '@lucide/svelte';
 
     export let medium;
     export let dataLoading;
