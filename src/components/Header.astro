@@ -1,4 +1,6 @@
 ---
+import { blog } from '../lib/config';
+
 const APP_NAME = import.meta.env.PUBLIC_APP_NAME;
 ---
 
@@ -13,8 +15,10 @@ const APP_NAME = import.meta.env.PUBLIC_APP_NAME;
             {APP_NAME}
         </button>
         <nav class="flex items-center gap-6 me-3">
-            <a href="/published-work">Work</a>
-            <a href="/philosophy-and-approach">Philosophy</a>
+            <a href={blog.path} title={blog.title.long}>{blog.title.short}</a>
+            <a href="/philosophy-and-approach" title="Philosophy and Approach">
+                Philosophy
+            </a>
         </nav>
     </div>
 </header>
