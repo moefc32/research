@@ -22,7 +22,7 @@
                         href={item.url}
                         target="_blank"
                         class="block bg-contain! w-full aspect-12/1 sm:aspect-14/1 md:aspect-10/1 lg:aspect-9/1"
-                        style="background: url(/platform/{item.class}.webp) center center no-repeat;"
+                        style="background: url(/res/platform/{item.class}.webp) center center no-repeat;"
                     ></a>
                 </div>
             {/each}

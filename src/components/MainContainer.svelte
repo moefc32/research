@@ -62,7 +62,7 @@
             class="flex flex-col items-center gap-6 p-6 bg-[#7289da] text-white w-full lg:w-1/3 rounded-lg shadow-lg lg:sticky lg:top-28"
         >
             <div
-                class="pt-25 bg-[url(/discord.webp)] bg-[center_top] bg-no-repeat bg-[length:100px] text-xl text-center max-w-100"
+                class="pt-25 bg-[url(/res/discord.webp)] bg-[center_top] bg-no-repeat bg-[length:100px] text-xl text-center max-w-100"
             >
                 Want to be a great academic researcher? Join our Discord server!
             </div>
