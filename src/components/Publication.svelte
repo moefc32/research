@@ -12,16 +12,13 @@
     <div class="flex flex-col gap-4 lg:max-h-80 overflow-y-auto">
         {#if !dataLoading}
             {#each publication as item, i}
-                <div class="flex">
+                <a href={item.url} target="_blank" class="flex">
                     <div class="px-3 pt-1">
                         <File size={18} />
                     </div>
                     <div class="flex flex-col gap-2 w-full">
-                        <div
-                            class="text-lg line-clamp-2 w-full"
-                            title={item.title}
-                        >
-                            <a href={item.url} target="_blank">{item.title}</a>
+                        <div class="text-lg line-clamp-2 w-full">
+                            {item.title}
                         </div>
                         <div class="flex items-center gap-2">
                             <span
@@ -39,7 +36,7 @@
                             {/if}
                         </div>
                     </div>
-                </div>
+                </a>
             {/each}
         {:else}
             {#each Array(5) as _, i}

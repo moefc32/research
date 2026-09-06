@@ -13,18 +13,18 @@
     >
         {#if !dataLoading}
             {#each platform as item, i}
-                <div
+                <a
+                    href={item.url}
+                    target="_blank"
                     class="card flex gap-4 p-4 w-full border-1 border-gray-300 shadow-lg"
-                    title={item.name}
+                    title="Click to open {item.name}"
                     data-aos="fade-up"
                 >
-                    <a
-                        href={item.url}
-                        target="_blank"
-                        class="block bg-contain! w-full aspect-12/1 sm:aspect-14/1 md:aspect-10/1 lg:aspect-9/1"
-                        style="background: url(/res/platform/{item.class}.webp) center center no-repeat;"
-                    ></a>
-                </div>
+                    <div
+                        class="bg-contain bg-center bg-no-repeat aspect-12/1 sm:aspect-14/1 md:aspect-10/1 lg:aspect-9/1"
+                        style="background-image: url(/res/platform/{item.class}.webp);"
+                    ></div>
+                </a>
             {/each}
         {:else}
             {#each Array(5) as _, i}
