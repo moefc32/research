@@ -10,13 +10,11 @@
     import Education from './Education.svelte';
     import Publication from './Publication.svelte';
     import Platform from './Platform.svelte';
-    import Medium from './Medium.svelte';
 
     let dataLoading = true;
     let education = [];
     let publication = [];
     let platform = [];
-    let medium = {};
 
     onMount(async () => {
         AOS.init();
@@ -31,15 +29,6 @@
             education = data.education;
             publication = data.publication;
             platform = data.platform;
-            const getMedium = data.medium;
-
-            getMedium.posts.forEach(item => {
-                item.date = datePrettier(item.date, {
-                    date: true,
-                });
-            });
-
-            medium = getMedium;
             dataLoading = false;
         } catch (e) {
             console.error(e);
@@ -51,14 +40,11 @@
 <Banner />
 
 <main class="flex flex-1 flex-col gap-9 mx-12 my-6">
-    <div class="flex flex-col lg:flex-row gap-9 w-full">
+    <div class="flex flex-1 flex-col lg:flex-row gap-9">
         <Education {education} {dataLoading} />
         <Publication {publication} {dataLoading} />
     </div>
     <Platform {platform} {dataLoading} />
-    <!-- <div class="flex flex-col-reverse lg:flex-row items-start gap-12 w-full"> -->
-        <!-- <Medium {medium} {dataLoading} /> -->
-    <!-- </div> -->
     <DomainNode base={'research'} nodes={['design', 'code']} />
 </main>
 

@@ -5,7 +5,7 @@
     export let dataLoading;
 </script>
 
-<div class="flex flex-col gap-6 w-full lg:w-1/2">
+<div class="flex flex-1 flex-col gap-6">
     <h2 class="pb-2 text-lg border-b border-gray-300">
         Scientific Publications
     </h2>
@@ -20,17 +20,14 @@
                         <div class="text-lg line-clamp-2 w-full">
                             {item.title}
                         </div>
-                        <div class="flex items-center gap-2">
+                        <div class="flex items-start gap-2">
                             <span
                                 class="badge badge-sm badge-warning font-semibold"
                             >
                                 {item.year}
                             </span>
                             {#if item.journal}
-                                <span
-                                    class="text-gray-500 text-sm truncate w-full"
-                                    title={item.journal}
-                                >
+                                <span class="text-gray-500 text-sm">
                                     {item.journal}
                                 </span>
                             {/if}
@@ -40,10 +37,8 @@
             {/each}
         {:else}
             {#each Array(5) as _, i}
-                <div class="flex">
-                    <div
-                        class="bg-gray-200 w-full h-20 border-1 border-gray-300 shadow-lg skeleton"
-                    ></div>
+                <div class="bg-gray-200 skeleton">
+                    <div class="h-20 border-1 border-gray-300 shadow-lg"></div>
                 </div>
             {/each}
         {/if}
