@@ -56,25 +56,9 @@
         <Publication {publication} {dataLoading} />
     </div>
     <Platform {platform} {dataLoading} />
-    <div class="flex flex-col-reverse lg:flex-row items-start gap-12 w-full">
-        <Medium {medium} {dataLoading} />
-        <!-- <aside
-            class="flex flex-col items-center gap-6 p-6 bg-[#7289da] text-white w-full lg:w-1/3 rounded-lg shadow-lg lg:sticky lg:top-28"
-        >
-            <div
-                class="pt-25 bg-[url(/res/discord.webp)] bg-[center_top] bg-no-repeat bg-[length:100px] text-xl text-center max-w-100"
-            >
-                Want to be a great academic researcher? Join our Discord server!
-            </div>
-            <a
-                href="https://link.mf-chan.com/belajar-riset"
-                target="_blank"
-                class="btn btn-lg btn-outline hover:text-[#7289da]"
-            >
-                Access Now, Free!
-            </a>
-        </aside> -->
-    </div>
+    <!-- <div class="flex flex-col-reverse lg:flex-row items-start gap-12 w-full"> -->
+        <!-- <Medium {medium} {dataLoading} /> -->
+    <!-- </div> -->
     <DomainNode base={'research'} nodes={['design', 'code']} />
 </main>
 
