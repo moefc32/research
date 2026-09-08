@@ -3,7 +3,7 @@
     export let dataLoading;
 </script>
 
-<div class="flex flex-col gap-6 w-full lg:w-1/2">
+<div class="flex flex-1 flex-col gap-6">
     <h2 class="pb-2 text-lg border-b border-gray-300">
         Educational Background
     </h2>
@@ -31,10 +31,11 @@
             {/each}
         {:else}
             {#each Array(2) as _, i}
-                <div
-                    class="card bg-gray-200 w-full h-[126px] border-1 border-gray-300 shadow-lg skeleton"
-                    data-aos="fade-up"
-                ></div>
+                <div class="bg-gray-200 skeleton">
+                    <div
+                        class="card h-[126px] border-1 border-gray-300 shadow-lg"
+                    ></div>
+                </div>
             {/each}
         {/if}
     </div>

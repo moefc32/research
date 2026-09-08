@@ -13,26 +13,28 @@
     >
         {#if !dataLoading}
             {#each platform as item, i}
-                <a
-                    href={item.url}
-                    target="_blank"
-                    class="card flex gap-4 p-4 w-full border-1 border-gray-300 shadow-lg"
-                    title="Click to open {item.name}"
-                    data-aos="fade-up"
-                >
-                    <div
-                        class="bg-contain bg-center bg-no-repeat aspect-12/1 sm:aspect-14/1 md:aspect-10/1 lg:aspect-9/1"
-                        style="background-image: url(/res/platform/{item.class}.webp);"
-                    ></div>
-                </a>
+                <div data-aos="fade-up">
+                    <a
+                        href={item.url}
+                        target="_blank"
+                        class="flex flex-col gap-4 p-4 hover:bg-gray-100 w-full border-1 border-gray-300 transition shadow-lg"
+                        title="Click to open {item.name}"
+                    >
+                        <div
+                            class="bg-contain bg-center bg-no-repeat aspect-12/1 sm:aspect-14/1 md:aspect-10/1 lg:aspect-9/1"
+                            style="background-image: url(/res/platform/{item.class}.webp);"
+                        ></div>
+                    </a>
+                </div>
             {/each}
         {:else}
             {#each Array(5) as _, i}
-                <div
-                    class="card p-4 bg-gray-200 w-full border-1 border-gray-300 shadow-lg skeleton"
-                    data-aos="fade-up"
-                >
-                    <div class="card w-full aspect-9/1"></div>
+                <div class="bg-gray-200 skeleton">
+                    <div class="p-4 border-1 border-gray-300 shadow-lg">
+                        <div
+                            class="aspect-12/1 sm:aspect-14/1 md:aspect-10/1 lg:aspect-9/1"
+                        ></div>
+                    </div>
                 </div>
             {/each}
         {/if}

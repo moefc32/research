@@ -51,7 +51,7 @@
 <Banner />
 
 <main class="flex flex-1 flex-col gap-9 mx-12 my-6">
-    <div class="flex flex-col lg:flex-row gap-9 w-full">
+    <div class="flex flex-1 flex-col lg:flex-row gap-9">
         <Education {education} {dataLoading} />
         <Publication {publication} {dataLoading} />
     </div>
